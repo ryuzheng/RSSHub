@@ -648,6 +648,9 @@ See docs of the specified route and `lib/config.js` for detailed information.
     -   `BITBUCKET_USERNAME`: Your Bitbucket username
     -   `BITBUCKET_PASSWORD`: Your Bitbucket app password
 
+-   Civitai
+    -   `CIVITAI_COOKIE`: Cookie of Civitai
+
 -   Discord
 
     -   `DISCORD_AUTHORIZATION`: Discord authorization token, can be found in the header of XHR requests after logging in Discord web client
@@ -696,7 +699,8 @@ See docs of the specified route and `lib/config.js` for detailed information.
 
 -   Iwara:
 
-    -   `IWARA_COOKIE`: Cookie of Iwara User
+    -   `IWARA_USERNAME`: username of Iwara User
+    -   `IWARA_PASSWORD`: password of Iwara User
 
 -   Last.fm
 
