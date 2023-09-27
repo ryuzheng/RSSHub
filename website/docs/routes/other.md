@@ -141,7 +141,7 @@ See [#app-store-mac-app-store](/routes/program-update#app-store-mac-app-store)
 
 ### 国家卫健委 - 疫情通报 {#corona-virus-disease-2019-guo-jia-wei-jian-wei-yi-qing-tong-bao}
 
-<Route author="Cielpy DIYgod" example="/coronavirus/nhc" path="/coronavirus/nhc"/>
+<Route author="EkkoG DIYgod" example="/coronavirus/nhc" path="/coronavirus/nhc"/>
 
 ### 财新网 - 新冠肺炎防疫全纪录 {#corona-virus-disease-2019-cai-xin-wang-xin-guan-fei-yan-fang-yi-quan-ji-lu}
 
@@ -354,7 +354,7 @@ For example:
 1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`
 2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`
 
-**To make it easier, the recommended way is to start a search on <a href="https://www.linkedin.com/jobs/search">LinkedIn</a> and use <a href="https://github.com/DIYgod/RSSHub-Radar">RSSHub Radar</a> to load the specific feed.**
+**To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**
 
 </Route>
 
