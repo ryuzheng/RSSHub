@@ -70,7 +70,9 @@ export type Config = {
         temperature?: number;
         maxTokens?: number;
         endpoint: string;
-        prompt?: string;
+        inputOption: string;
+        promptTitle: string;
+        promptDescription: string;
     };
     bilibili: {
         cookies: Record<string, string | undefined>;
@@ -167,6 +169,9 @@ export type Config = {
     };
     javdb: {
         session?: string;
+    };
+    keylol: {
+        cookie?: string;
     };
     lastfm: {
         api_key?: string;
@@ -433,7 +438,9 @@ const calculateValue = () => {
             temperature: toInt(envs.OPENAI_TEMPERATURE, 0.2),
             maxTokens: toInt(envs.OPENAI_MAX_TOKENS, 0) || undefined,
             endpoint: envs.OPENAI_API_ENDPOINT || 'https://api.openai.com/v1',
-            prompt: envs.OPENAI_PROMPT || 'Please summarize the following article and reply with markdown format.',
+            inputOption: envs.OPENAI_INPUT_OPTION || 'description',
+            promptDescription: envs.OPENAI_PROMPT || 'Please summarize the following article and reply with markdown format.',
+            promptTitle: envs.OPENAI_PROMPT_TITLE || 'Please translate the following title into Simplified Chinese and reply only translated text.',
         },
 
         // Route-specific Configurations
@@ -533,6 +540,9 @@ const calculateValue = () => {
         },
         javdb: {
             session: envs.JAVDB_SESSION,
+        },
+        keylol: {
+            cookie: envs.KEYLOL_COOKIE,
         },
         lastfm: {
             api_key: envs.LASTFM_API_KEY,
